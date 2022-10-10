@@ -1,0 +1,45 @@
+Welcome To Angular Module 12
+				  Sumit Raokhande
+
+- B.E.Electronics, KBP satara
+- M.Tech Electronics, Walchand College Sangli
+- C-Dac Wimc , Sunbeam pune
+- worked as Mobile Application developer at tivre business solution
+- worked on J2ME,Symbian,Windows Mobile,Reaserach Motion
+- Worked as Android developer at veetron 
+- Live android application prasieo,autohub,garage
+- Worked as JDE Developer of Oracle Product
+- Worked as OpenSDK developer
+- work as angular developer
+- work on google cloud & docker 
+- Also Association with kiran sir as a corporate trainer
+
+
+
+
+		Welcome To Angular Module 12
+				  Sumit Raokhande
+ - lect. is form mon-frid => 
+ - sat doubt solving 8.30am 
+ - 8.30am sharp join 
+ - avg duration 1.15min to 1.30 min 
+ - duration is 45-48 hrs
+ - recording will available but u can not download that recording 
+ - all codes will givent on git hub repository
+ - i can't share any images 
+ - two way communiction 
+ - pre-requiest U hv to know oops concept
+ - Basics of HTML And css 
+ - what i will givent
+	- typescript (Java script)
+	- Angular 12 
+ - daily practicse is required
+ - don't miss any session
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
