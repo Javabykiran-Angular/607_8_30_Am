@@ -1,0 +1,47 @@
+Last Lecture
+1 diff between angular Js & angular 2+=> js Vs Typescript
+	-js based freamwork/typescript based
+	-it follows mvc pattern / it follows MVW pattern
+	-not effectively memory mangement / effectively mangement is there
+	- it does not follow oops concept / it follows oops concept
+	- it does not support mobile community / it support all cross platfrom
+	
+2 What is Angular 12
+	- front end technolgy
+	- it is freamwork
+	
+3 Why Angular 12/ features of angular 12 / advantages of angular 12 
+	- easy to develop ur application
+	- it is freamwork
+	- it creates template declaration,module,DI,services,end to end tooling
+	- it is universal freamwork
+	- one freamwork to all devices
+	- it has speed & performance 
+	- it is code splitting function
+	- angular cli
+	
+Today's Lecture
+1 What is Typescript 
+2 simple program
+3 variable
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
