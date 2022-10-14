@@ -1,0 +1,37 @@
+Last Lecture
+1 What is Typescript
+	- ecma script+ecma script version+Additional features= Typescript
+	- it is superset of JS
+	Advantage
+	1 strong static typing 
+	2 compile time find 
+	3 support oops concept
+	Disadvantage
+	1 browser does not understand
+		tsc=> typescript compiler
+			it transcompile of .ts file to js file 
+	2 compile time slow 
+2 Overview of Vscode
+	
+3 Simple program
+		demo1.ts
+			console.log("Hello World");
+			console.log('Hello')
+			tsc demo1.ts 
+			node demo1.js 
+4 Variable
+	var a1,b1,E$r,t_1
+
+Today Lecture
+1 Data types
+2 type assertions
+3 operators
+4 Control statement
+
+
+
+
+
+
+
+
