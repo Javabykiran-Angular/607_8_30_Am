@@ -1,0 +1,31 @@
+Last Lecture
+1 Data types
+	number,string,boolean,any,void,null & undefined
+	var a:number=10;
+	console.log("Value of a"+a)
+	console.log('Value of a'+a)
+	var a1:number;
+	//default value is undefined
+	var a2=10;
+	var a4:any;
+	a4=2.5;
+	a4='sumit';
+	a4=true;
+2 type assertions
+	var a5:any;
+	//1 Angle bracket
+	//2 as syntax
+	var temp=(<string> a5);
+	
+	var temp=(a4 as string)
+	
+3 operators
+	all operators are present of ur core java
+	==(it checks only value ),=== (it checks value as well as data types)
+4 Control statement
+	if-else,nested if-else ,break,switch,continue
+
+Today Lecture
+1 Loop statement
+2 var vs let vs const 
+3 functions
