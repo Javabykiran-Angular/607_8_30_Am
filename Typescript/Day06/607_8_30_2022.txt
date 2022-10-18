@@ -1,0 +1,78 @@
+Last Lecture
+1 Loop statement
+	while,do-while,for,foreach
+	while(count!=0){
+	...
+	}
+	do{
+	...
+	}while(count!=0)
+	
+	for(var i=0;i<4;i++){
+	....
+	}
+	
+	
+2 var vs let vs const 
+	var => it has global scope 
+	let => it has within nearest block 
+	const=> it has global as well as local scope 
+3 functions
+	1 function without paramter & without return type
+		function add1(){
+		...
+		}
+		
+		add1();
+	2 function with paramter & without return type
+	function add2(a:number,b:number){
+			...
+	}
+	add2();
+	
+	3 function without paramter & with return type
+		function add3():number{
+			return (5+5)
+		}
+		
+		let temp=add3();
+	4 function with paramter & with return type
+		function add4(a:number,b:number):number{
+			return (a+b);
+		}
+		
+		console.log("Addition is "+add4(2,3));
+
+Today Lecture
+1 anonymous functions
+2 fat arrow functions
+3 optional paramter functions
+4 default paramter functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
