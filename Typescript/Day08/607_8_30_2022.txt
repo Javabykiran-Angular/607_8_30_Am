@@ -1,0 +1,85 @@
+Last Lecture
+1 Array 
+	- it is dynamically growable & shrinkable
+	- hetrogenous as well as homogen. data
+	let a:number[];
+	let a:number[]=[];
+	let a=[3,4,5];
+	console.log(a);
+	console.log(a.join("#"))
+	
+2 Array Method
+3 foreach loop
+	a.foreach((myvalue,i)=>{
+		....
+	});
+4 spread operator
+	
+5 rest paramter functions
+		function display(str:string,...item:number[]){
+		....
+		}
+		
+		display("sumit",2,44,5)
+6 push & pop
+	- LIFO
+	let a:number[]=[];
+	
+	a.push(3);
+	console.log(a);
+	a.push(4,6,8)
+	console.log(a);
+	let res=a.pop()
+
+Today Lecture
+1 Splice method
+a.splice(1,0,33)
+a.splice(2,1)
+a.splice(2,1,45)
+a.splice(4,1,21,12,23);
+
+2 slice
+	let temp=a.slice(2,7)
+3 json object
+	let obj={
+		id:9,
+		"fname":'sumit',
+		lname:'...'
+	}
+	1 dot operator
+		obj.fname,obj.id
+	
+	2 square operator
+		obj["fname"]
+		obj["id"]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
