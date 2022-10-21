@@ -1,0 +1,88 @@
+Last Lecture
+1 Splice method
+	a.splice(1,0,33)
+	a.splice(2,1)
+	a.splice(2,1,45)
+	a.splice(4,1,21,12,23);
+
+2 slice
+	let temp=a.slice(2,7)
+3 json object
+	java script object notation
+	let obj={
+		id:9,
+		"fname":'sumit',
+		lname:'...'
+	}
+	1 dot operator
+		obj.fname,obj.id
+	
+	2 square operator
+		obj["fname"]
+		obj["id"]
+
+Today Lecture
+1 Array of object
+
+	let arrobj=[
+		{
+			id:9,
+			fname:"sumit"
+			country:{
+				cid:1,
+				cname:"India"
+			},
+			month:["jan","feb"],
+			result:[
+				{
+					subj:"m1",
+					marks:40
+				},
+				{
+					subj:"m1",
+					marks:40
+				}
+			]
+		}
+	]
+
+
+for(let i=0;i<arrobj.length;i++){
+	
+	
+	for(let j=0;j<arrobj[i].result.length;j++){
+		....
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
