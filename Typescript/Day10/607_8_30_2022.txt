@@ -1,0 +1,78 @@
+Last Lecture
+1 Array of object
+
+	let arrobj=[
+		{
+			id:9,
+			fname:"sumit"
+			country:{
+				cid:1,
+				cname:"India"
+			},
+			month:["jan","feb"],
+			result:[
+				{
+					subj:"m1",
+					marks:40
+				},
+				{
+					subj:"m1",
+					marks:40
+				}
+			]
+		}
+	]
+
+
+for(let i=0;i<arrobj.length;i++){
+	
+	console.log(`
+		Id 	:: ${arrobj[i].id}
+		.....
+		country :: ${arrobj[i].country.cname}
+		month :: ${arrobj[i].month.join("  ")}
+	`);
+	
+	for(let j=0;j<arrobj[i].result.length;j++){
+		....
+		console.log(`
+			Subject ${arrobj[i].result[j].subj}
+		`)
+		
+	}
+	
+}
+
+Today Lecture
+1 class,object,property
+	
+ 	export class Myclass{
+		private id:number;
+		protected fname:string;
+		
+		constructor(id:number,...){
+			this.id=id;
+			...
+		}
+		
+		display(){
+			console.log(`
+				id ${this.id}
+			`)
+		}
+	}
+	
+	let obj=new Myclass(9,'Sumit');
+	obj.display();
+	
+	demo2.ts
+	import {Myclass} from './demo1';
+	
+	let obj=new Myclass();
+	obj.display();
+	
+2 method
+3 constructor
+4 Access specifier
+5 Access in same package
+6 Access in different package
