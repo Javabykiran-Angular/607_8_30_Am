@@ -1,0 +1,46 @@
+Last Lecture
+1 class,object,property
+	
+ 	export class Myclass{
+		private id:number;
+		protected fname:string;
+		
+		constructor(id:number,...){
+			this.id=id;
+			...
+		}
+		
+		display(){
+			console.log(`
+				id ${this.id}
+			`)
+		}
+	}
+	
+	let obj=new Myclass(9,'Sumit');
+	obj.display();
+	
+	demo2.ts
+	import {Myclass} from './demo1';
+	
+	let obj=new Myclass();
+	obj.display();
+	
+	myfolder
+	demo3.ts
+	import {Myclass} from '../day10/demo1';
+	
+2 method
+3 constructor
+4 Access specifier
+5 Access in same package
+6 Access in different package
+
+Today Lecture
+1 Inheritance
+	single,multilevel,hireachical
+	
+2 Method override
+3 Interface
+	
+4 Association/contentment/composition/Aggregation=> has a relationship
