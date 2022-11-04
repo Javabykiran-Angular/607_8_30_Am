@@ -1,0 +1,78 @@
+Last Lecture
+1 overview of arch.
+	- Angular arch is component orientated
+	- component 
+		1 view file => .html 
+		2 stylesheet file => .css
+		3 component file => .ts 
+		4 spec.ts => testing 
+		- every component has only one view file & one component file 
+		- but css file may be one or more 
+		- metadata 
+			- it gives extra information about component
+				@Component({
+					....
+				})
+	- Data binding
+		1 String interpolation
+		2 Property Binding
+		3 Style Binding
+		4 Class Binding
+		- data flow from component file to view file 
+	- Event Binding 
+		- data/request flow from view file to component file 
+		- click,change,keybaord,mouse event ....,custom event 
+	- directive 
+		- to change or update or manipulate to behaviour of view file
+		- attribute,component, structure, event directive 
+	- App Module 
+		module -> It is collection classess,variable, component,services,enum....
+		- every angular application 1 root module present
+		- module may be more than 1 
+		
+		1 declaration
+			- to register ur component for create a factory class 
+			
+		2 import
+			- we import a module 
+		3 services
+			- It is simple class 
+			- it is used to write a Business Logic 
+			- it is used for code resualbilty
+			- it is used for code maintainbility
+			- it is provide isolation to ur component
+			- it is used to connect ur front end to ur back end server 
+			- to implement that service we have use DI 
+		4 routing
+			- navigation from one component to another component
+	- injector
+		- if u want use 3rd party services we can inject that service or module 
+		- inbuild module as well as services of angular we can inject 
+		
+2 create component manually
+	create 3 files
+	employee.component.ts
+		@Compoenet({
+			selector:'app-employee'.
+			templateUrl:'./employee.component.html',
+			StyleUrls:['./employee.component.css']
+		})
+		export class EmployeeComponent{
+		
+		}
+		
+		app.module.ts
+		declaration:[
+		EmployeeComponent
+		]
+		
+		app.component.html
+		<app-employee></app-employee>
+
+Today Lecture
+1 create component through cli
+2 Data Binding
+3 String Interpolation
+4 Property Binding
+
+

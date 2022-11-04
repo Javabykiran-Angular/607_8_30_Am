@@ -1,0 +1,13 @@
+img{
+    width: 250px;
+    height: 250px;
+}
+
+#mydiv{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 32px;
+}
+
+.myclass{
+    color: red;
+}
