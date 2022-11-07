@@ -1,0 +1,33 @@
+Last Lecture
+1 create component through cli
+	ng g c student
+	
+	employee.html
+	<app-student>
+	
+2 Data Binding
+	- data flow from component to view file
+3 String Interpolation
+	- to display data dynmically to end end user
+	{{name}}
+	<h2> {{name}} </h2>
+		<h2> {{'welcome '+name}} </h2>
+	.ts file
+	name:string='sumit'
+4 Property Binding
+	<input [value]="name">
+	<img [src]="imgUrl">
+	
+	
+	.ts file
+	name:string='Sumit';
+	imgUrl:string='../../assets/bg.jpg';
+
+Today Lecture
+1 difference between string interpolation & property binding
+2 Style Binding
+	condition?expression1:expression2
+3 Class Binding
+
+
+

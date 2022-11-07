@@ -1,0 +1,17 @@
+.success{
+    color: green;
+}
+
+.danger{
+    color: red;
+}
+.warning{
+    color: orange;
+}
+
+.special{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 32px;
+    font-style: italic;
+    text-transform: uppercase;
+}
