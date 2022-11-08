@@ -1,0 +1,64 @@
+Last Lecture
+1 difference between string interpolation & property binding
+	<div hidden= "{{isHidden}}" >
+		......
+	<div>
+<div [hidden]= "isHidden" >
+		......
+	<div>
+
+	
+	
+		.ts file
+		isHidden:boolean=false;
+2 Style Binding
+	-dynamically u can apply a style
+	<h2 [style.color]="mycolor">....
+	
+	<h2 [style.color]="rating<4?'red':'green'">....
+	
+	ngStyle
+		- It is attribute directive
+	
+	<div [ngStyle]="jsonObj">
+		.....
+	
+	.ts file
+	mycolor:string='red';
+	
+	jsonObj={
+		color:'red',
+		fontFamily:'...',
+		'font-size':'...'
+	}
+	
+3 Class Binding
+	<h2 [class]="myclass">....
+	
+	<h2 [class.danger]="rating<4"
+		[class.warning]="rating>4">....
+	
+	
+		ngClass
+			- It is attribute directive
+		<div [ngClass]="jsonObj">...
+	
+	.ts file 
+	myclass:string='success';
+	rating:number=2;
+	
+	jsonObj={
+		'success':!this.isError,
+		'danger' : this.isError,
+		'special': this.isSpecial
+	}
+
+Today Lecture
+1 Event Binding
+	- data/request flow from view file to component file 
+2 Click event
+	
+3 $event 
+
+
+
