@@ -1,0 +1,41 @@
+Last Lecture
+1 Event Binding
+	- data/request flow from view file to component file 
+	
+2 Click event
+	
+	<button (click)="onClick()">...
+	<img src="..." (click)="onImg()"
+	
+	.ts file
+		count:number=0;
+	onClick(){
+		if(this.count==0){
+		console.log("....")
+		this.count++;
+		}
+	}
+	
+	onImg(){
+	....
+	}
+	
+3 $event
+	- special variable
+	- it gives current dom element information
+	
+	<button value="...." (click)="onClick($event)">
+	
+	.ts file
+	onClick(myevent:any){
+		console.log(myevent);
+		console.log(myevent.target.value)
+	}
+
+Today Lecture
+1 Template ref variable
+2 Real time example
+3 change event 
+
+
+
