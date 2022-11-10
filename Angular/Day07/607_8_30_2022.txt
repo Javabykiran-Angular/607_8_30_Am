@@ -1,0 +1,63 @@
+Last Lecture
+1 Template ref variable
+	- data manipulate or behaviour manipulate
+	- # 
+	- it holds a handle/object
+	<input #inputname>
+		<button (click)="onClick(inputname)"
+		
+	<input #inputname1>
+		<button (click)="onClick1(inputname1.value)"
+		
+		.ts file
+		onClick(myname:any){
+			....
+			console.log(myname.value);
+			myname.style.background='green'
+		}
+		
+		onClick1(myvalue:any){
+			....
+		}
+2 Real time example
+		
+		<lable>Num1::
+		<input #num1 >
+		<lable>Num2::
+		<input #num2 >
+		<button (click)="onAddition(num1.value,nume2.value)">
+		<lable>Result::
+		<input [value]="result" >
+		
+		.ts file
+		onAddition(num1:any,num2:any){
+			let n1=+num1;
+			let n2=+num2;
+			this.result=n1+n2;
+			
+		}
+		
+	
+3 change event 
+	<input (change)="onChange()">
+	
+
+Today Lecture
+1 Key Board Event
+	1 keyup
+	2 keydown
+2 event Binding without event handler
+3 Two way Binding
+4 Structural Directive
+	- u can hide/update or manipulate ur dom Structure so it is called Structural directive
+	1 if directive => *ngIf
+	2 for directive => *ngFor
+	3 switch directive => *ngSwitch
+	
+5 if directive
+6 ng-template 
+	- It is component Directive 
+
+
+
+

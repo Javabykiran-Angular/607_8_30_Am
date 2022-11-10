@@ -1,0 +1,29 @@
+<p>eventbinding3 works!</p>
+
+<!-- Key Board Event
+
+-->
+
+<!-- <input type="text" (keyup)="onKeyUp()" placeholder="key up event"> <br><br>
+
+<input type="text" (keydown)="onKeyDown()" placeholder="key down event"> -->
+
+<!-- event Binding without event handler
+    u hv create 1 property
+ -->
+
+ <button (click)="result=8+8" >Addition</button>
+ <h2> {{result}} </h2> <br><br>
+
+ <!-- Two way Binding
+        - ngModel
+        - It is attribute directive 
+        - u hv import one module
+        FormsModule=> app.module.ts => import 
+        - [()]=> banana in the box
+        [(ngModel)]="propertyName" 
+-->
+    <input type="text" 
+        [(ngModel)]="name"
+    placeholder="Enter the name">
+    {{name}}
