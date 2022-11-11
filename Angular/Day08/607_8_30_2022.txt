@@ -1,0 +1,42 @@
+Last Lecture
+1 Key Board Event
+	1 keyup
+	2 keydown
+	<input (keyup)="onKeyup()">
+	<input (keydown)="onKeydown()">
+2 event Binding without event handler
+	<button (click)="result=8+8">
+	{{result}}
+3 Two way Binding
+	- ngModel
+	[(ngModel)]="name"
+	app.module.ts
+		FormsModule
+4 Structural Directive
+	- u can hide/update or manipulate ur dom Structure so it is called Structural directive
+	1 if directive => *ngIf
+	2 for directive => *ngFor
+	3 switch directive => *ngSwitch
+	
+5 if directive
+		<div *ngIf="rating<4;else elsepart">
+			<h2>.....
+		</div>
+	
+	<ng-template #elsepart>
+		<h2>.....
+	</ng-template>
+	
+6 ng-template 
+	- It is component Directive 
+	
+Today Lecture
+1 for directive
+2 Mouse Event 
+	1 mouseover
+	2 mouseout
+
+
+
+
+
