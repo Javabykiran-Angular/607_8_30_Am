@@ -1,0 +1,54 @@
+Last Lecture
+1 for directive
+	<ul>
+		<li *ngFor="let item of course;index as i"> 
+			{{i+1}} {{item}}
+		</li>
+		</ul>
+		
+	<table>
+		<thead>
+			<th>...
+			....
+		</thead>
+		<tbody>
+			<tr *ngFor="let item of arrproduct;index as i"
+				(mouseover)="onMouseOver(item)"
+				[ngClass]=" {
+				
+
+				'highlight':selected===item.name
+				} "
+				
+				(mouseout)="onMouseout()"
+			>
+				<td> {{i+1}}</td>
+				<td> {{item.name}}</td>
+			</tr>
+		</tbody>
+	<table>
+	
+	.ts file
+	
+	onMouseOver(item:any){
+		this.selected=item.name;
+	}
+	
+	onMouseout(){
+		this.selected='';
+	}
+2 Mouse Event 
+	1 mouseover
+	2 mouseout
+	
+Today Lecture
+1 Switch Directive
+2 Component Interaction
+	- u can send data from one comopoent to another comopoent
+	- parent-child relationship 
+3 @Input() 
+
+
+
+
+
