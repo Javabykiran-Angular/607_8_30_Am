@@ -1,0 +1,54 @@
+Last Lecture
+1 Switch Directive
+	<input #inputcolor>
+	<button (click)="onClick(inputcolor.value)">
+	
+	
+	<div [ngSwitch]="choice">
+		<div *ngSwitchCase="'red'"
+			[style.background]="choice"
+		>Your color name {{choice}}
+		</div>
+		....
+		
+		<div *ngSwitchDefault
+			[style.background]="choice==''?'black':'orange'"
+		> Your color is wrong {{choice}}
+	
+	</div>
+	
+	.ts file
+	
+	onClick(colorname:string){
+		this.choice=colorname;
+	}
+	
+2 Component Interaction
+	- u can send data from one comopoent to another comopoent
+	- parent-child relationship 
+3 @Input() 
+	app.comopoent.html
+		<app-parent>
+	parent.component.html
+	<app-child1 [parentStrdata]="strdata">
+	
+	parent.ts 
+	
+	strdata:string='...';
+	
+	child.ts
+	@Input() parentStrdata:string='';
+	
+	child.html
+	{{parentStrdata}}
+
+Today Lecture
+1 @Output()
+	- if u want to send data from child to parent
+2 Inbuild Pipe
+	- it is used to transform ur data to end user
+
+
+
+
+
