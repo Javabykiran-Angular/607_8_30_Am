@@ -1,0 +1,58 @@
+Last Lecture
+1 @Output()
+	- if u want to send data from child to parent
+		child.html
+		<button (click)="onSend()">
+		child.ts
+		
+		@Output() StrEvent=new EventEmitter();
+		strData:string='...'
+		arrObj=[{
+		
+		}];
+		
+		@Output() arrobjevent=new EventEmitter();
+		
+		onSend(){
+			this.StrEvent.emit(this.strData);
+			this.arrobjevent.emit(this.arrObj);
+		}
+		
+		parent.html
+		{{strDataRecived}}
+		
+		
+		
+		<app-child2 (StrEvent)="strDataRecived=$event"
+				(arrobjevent)="arrobj=$event"
+		parent.ts
+		strDataRecived:string='';
+2 Inbuild Pipe
+	- it is used to transform ur data to end user
+		{{strdata|lowercase}}
+		{{strdata|uppercase}}
+		{{strdata|titlecase}}
+		
+		{{0.25|percent}}
+		{{0.025|percent:'1.1'}}
+		
+		{{0.25|currency}}
+		{{0.25|currency:'INR':'code'}}
+		
+		{{5.76894|number:'1.2-3'}}
+		{{mydate| date:'longDate'}}
+		{{mydate| date:'dd-MM-yyyy'}}
+		{{mydate| date:'longDate'|uppercase}}
+		
+		.ts
+		mydate=new Date();
+	
+Today Lecture
+1 Custom Pipe 
+2 PipeTransform
+3 Transform
+
+
+
+
+
