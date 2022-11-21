@@ -1,0 +1,49 @@
+Last Lecture
+1 Http Methods
+	1 get => to fetch a data from backend server
+	2 post => to Send data from frontend to back end server
+	3 put => to update a data 
+	4 delete => to delete a particular data 
+2 HttpClientModule
+app.module.ts 
+	import :HttpClientModule
+3 Back end connection Url 
+
+https://jsonplaceholder.typicode.com/posts
+	- it is fake url (fake backend)
+	- it is not store data into its DB but it gives a response to front end post/update/delete. 	
+
+4 @Injector
+	ng g s http 
+	
+	@Injector({}
+		provideIn:"root"
+	)
+	export class httpService{
+		constructor(private http:HttpClient) {}
+		
+		url:string="...";
+		
+		getPost(){
+			return (this.http.get(this.url));
+		}
+		
+	}
+	
+5 Observable
+6 get request
+
+Today Lecture
+1 Post Request
+2 put request
+
+ 
+	
+	
+	
+	
+
+
+
+
+
