@@ -1,0 +1,81 @@
+Last Lecture
+1 Post Request
+	service.ts
+	
+	postdata(obj){
+		return (this.http.post(this.url,obj));
+	}
+	
+	updatedata(obj){
+		return (this.http.put(`${this.url}/${obj.id}`,obj));
+	}
+	
+	post.ts
+	onsend(mytitle:string,mybody:string){
+		let obj={
+			title:mytitle,
+			body:mybody
+		}
+		
+		this.service.postdata(obj)
+		.subscribe((response)=>{
+			console.log(response);
+		})
+	}
+	
+2 put request
+<div [hidden]="isHidden">
+	<input [(ngModel)]="id" placeholder="Enter the id" readonly> <br>
+	<input [(ngModel)]="title"  placeholder="">
+	...
+	<button>update
+<div> 
+
+post.ts
+	onEdit(item){
+		this.id=item.id;
+		this.title=item.title;
+		
+		this.isHidden=false;
+	}
+	
+	onUpdate(){
+		let obj={
+			id:this.id,
+			title:this.title,
+			body:this.body
+		}
+		
+		this.service.updatedata(obj)
+		.subscribe((response)=>{
+			...
+		})
+	}
+
+Today Lecture
+1 delete Request
+2 error handling
+3 Routing
+	- navigation from one component to another component
+	- u can send data from one component to other component but that data will be visible in the url
+	
+4 Routing Steps
+	1 configure the route 
+	2 use <router-outlet> 
+	3 establish a link/navigate between component.
+
+5 Empty path
+	it set a default component
+6 wild cart operator
+	it indicates to show not found component
+7 static routing 
+	implement using routerLink
+	
+	
+	
+	
+
+
+
+
+
