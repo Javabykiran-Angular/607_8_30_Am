@@ -1,0 +1,74 @@
+Last Lecture
+1 delete Request
+	service.ts
+	deletedata(id:any){
+		return (this.http.delete(`${this.url}/${id}`));
+	}
+	
+	post.ts
+	ondelete(id:any){
+		this.service.deletedata(id)
+		.subscribe((response)=>{
+			console.log(response)
+		},(myerror)=>{
+			alert('...')
+		})
+	}
+2 error handling
+
+3 Routing
+	- navigation from one component to another component
+	- u can send data from one component to other component but that data will be visible in the url
+	
+4 Routing Steps
+	1 configure the route 
+	
+		[
+			{
+				path:"",component:HomeComponent
+			},
+			{
+				path:'page1',component:Page1Component
+			},
+			{
+				path:'page2',component:Page2Component
+			},
+			
+			{
+				path:'**',component:NotFoundComponent
+			}
+			
+		]
+	
+	2 use <router-outlet> 
+		app.component.html
+		<router-outlet></router-outlet>
+	3 establish a link/navigate between component.
+	
+	home.html
+	
+	<a routerLink="/Page1">Page1
+	
+	
+
+5 Empty path
+	it set a default component
+6 wild cart operator
+	it indicates to show not found component
+7 static routing 
+	implement using routerLink
+
+Today Lecture
+1 Send Parameter through the routing
+2 send query parameter through the routing
+3 dynamic routing
+	navigate=> router package
+	
+	
+	
+	
+
+
+
+
+
