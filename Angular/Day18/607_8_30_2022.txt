@@ -1,0 +1,80 @@
+Last Lecture;
+1 Send Parameter through the routing
+	[
+		{
+			path:"Page2/:id/:username",componet:...
+		}
+	]
+	
+	
+	home.ts
+	myid:number=9;
+	username:string='';
+	jsonobj={
+		id:9,
+		...
+	}
+	
+	home.html
+	
+	<a [routerLink]="['/Page2',myid,username]">
+	<a routerLink="/queryparam" [queryParams]="jsonobj" >
+	page2.ts
+constructor(private route:ActivatatedRoute){}
+
+	ngOnInit(){
+		this.route.ParamMap
+		.subscribe((param:any)=>{
+			this.myid=+param.get('id')
+			this.myusername=param.get('username')
+		})
+	}
+	
+	queryparam.ts
+	constructor(private route:ActivatatedRoute){}
+	
+	this.route.QueryParamMap
+	.subscribe((param:any)=>{
+		this.jsonobj.myid=+param.get('id')
+	})
+	
+	
+2 send query parameter through the routing
+3 dynamic routing
+	navigate=> router package
+	
+	constructor(private router:Router){}
+	
+	onPage2(){
+		this.router.navigate(['/Page2',this.myid]);
+	}
+	onQuery(){
+		this.router.navigate(['/QueryParam'],{
+			queryparam:this.jsonobj
+		})
+	}
+	
+Today Lecture
+1 Overview of Bootstrap
+	- it is css fremawork
+	- u make ur application attractive
+	- to make ur application responsive
+		
+2 Integration of bootstrap
+	1 use CDN link 
+	2 offline use of bootstrap
+		npm install bootstrap@4.6 --save 
+		
+
+3 Basic grid system of bootstrap
+	
+
+	
+	
+	
+	
+
+
+
+
+
