@@ -1,0 +1,34 @@
+Last Lecture;
+1 Template Driven Form
+	- simple form to design for login,signup,...
+	- all validation is perform on view side
+	
+2 FormControl
+	- it is class 
+	1 valid => true/false
+	2 invalid => true
+	3 touched => true
+	4 pristine => true
+	5 dirty  => true
+	6 errors => it is object 
+	
+	how to create object of FormControl
+	1 u hv use ngModel directive,u hv use name attribute of html element 
+	2 create a template ref variable & assign its object to template ref.
+	3 to check the errors/validation for that we have to use required attribute
+	
+3 Validation
+
+Today Lecture
+1 Continous TDF
+2 ngSubmit
+3 ngValue
+	
+	
+	
+	
+
+
+
+
+
